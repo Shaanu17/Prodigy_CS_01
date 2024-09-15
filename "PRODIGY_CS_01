@@ -1,0 +1,39 @@
+def caesar_cipher(text, shift, mode='encrypt'):
+    result = ""
+    shift = shift % 26  # To handle shifts larger than 26
+    
+    for char in text:
+        if char.isalpha():
+            # Shift within the alphabet
+            start = ord('A') if char.isupper() else ord('a')
+            offset = ord(char) - start
+            if mode == 'decrypt':
+                offset = (offset - shift) % 26
+            else:  # 'encrypt'
+                offset = (offset + shift) % 26
+            result += chr(start + offset)
+        else:
+            # Non-alphabetic characters are added unchanged
+            result += char
+    
+    return result
+
+def main():
+    print("Caesar Cipher Program")
+    mode = input("Choose mode (encrypt/decrypt): ").strip().lower()
+    if mode not in ['encrypt', 'decrypt']:
+        print("Invalid mode. Please choose 'encrypt' or 'decrypt'.")
+        return
+    
+    message = input("Enter your message: ")
+    try:
+        shift = int(input("Enter shift value (integer): "))
+    except ValueError:
+        print("Invalid shift value. Please enter an integer.")
+        return
+    
+    result = caesar_cipher(message, shift, mode)
+    print(f"Result: {result}")
+
+if __name__ == "__main__":
+    main()
