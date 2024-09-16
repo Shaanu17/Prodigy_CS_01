@@ -9,4 +9,4 @@ Copy the above Python code into the editor.
 Save the file with a .py extension.
  In Windows: Open Command Prompt (CMD)
 In Mac/Linux: Open Terminal.Use the cd command to change to the directory where you saved the Python script.
-Execute the Python script by running : python caeser.py.(You can use your filename on your cmd by using python filename.
+Execute the Python script by running  "python file nam ".
