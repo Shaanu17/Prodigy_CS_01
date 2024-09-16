@@ -1,5 +1,5 @@
 Task-01 :- 
-In this project i created a Python program from pre-defined  libraries that can encrypt and decrypt text using the Caesar Cipher algorithm. IT allow users to input a message and a shift value to perform encryption and decryption.
+In this project i created a Python program from pre-defined  libraries that can encrypt and decrypt text using the Caesar Cipher algorithm. It allow users to input a message and a shift value to perform encryption and decryption.
 
 The Caesar Cipher is one of the simplest and oldest encryption algorithms. It is a substitution cipher where each letter in the plaintext is "shifted" by a certain number of positions down or up the alphabet
 
